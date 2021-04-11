@@ -45,7 +45,7 @@ class TopicCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
+        configureCell()
     }
     
     required init?(coder: NSCoder) {
@@ -64,7 +64,7 @@ class TopicCell: UITableViewCell {
             topicCountAndDateStackView.numberPosters = viewModel.numberPostersLabelText
             topicCountAndDateStackView.date = viewModel.dateLabelText
             
-            configureCell()
+            
         }
     }
     
